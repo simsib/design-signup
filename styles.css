@@ -1,0 +1,170 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aside {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 200%;
+    background-image: url(./images/bg-intro.svg);
+}
+
+.ilustration {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-image: url(./images/illustration-main.svg);
+}
+
+.main-section {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.menu-item.twitter:hover {
+    color: #1da1f2;
+}
+
+.menu-item.facebook:hover {
+    color: #3b5998;
+}
+
+.menu-item.mail:hover {
+    color: #ff4500;
+}
+
+.text {
+    margin-top: 80px;
+}
+.text .title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.text .info {
+    color: hsl(0, 0%, 50%);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.signup {
+    margin-top: 60px;
+    font-weight: 700;
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.form {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.signup .label {
+    font-size: 22px;
+}
+
+.email {
+    height: 48px;
+    line-height: 48px;
+    flex: 1;
+    border: 0;
+    box-shadow: hsl(0, 0%, 80%) 2px 2px 4px 0px;
+    outline: none;
+    padding: 0;
+    vertical-align: bottom;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 0 16px;
+}
+
+.form-submit {
+    height: 48px;
+    width: 150px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(163, 95%, 43%);
+    box-shadow: hsl(0, 0%, 80%) 2px 2px 4px 0px;
+    outline: none;
+    border: 0;
+    padding: 0;
+    line-height: 48px;
+    font-size: 16px;
+}
+
+.privacy {
+    margin-top: 150px;
+    float: right;
+}
+
+.privacy-link {
+    font-size: 12px;
+    color: hsl(228, 45%, 44%);
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.footer {
+    clear: both;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
