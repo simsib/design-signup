@@ -8,7 +8,6 @@ body {
 
 * {
     box-sizing: border-box;
-    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,19 +39,19 @@ body {
 .main-section {
     float: left;
     width: 50%;
-    height: 100%;
-    padding: 80px;
+    padding: 30px 80px 0 80px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 30px 80px 0 80px;
 }
 
 .logo {
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
@@ -137,6 +136,7 @@ body {
     padding: 0;
     line-height: 48px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .privacy {
@@ -157,6 +157,7 @@ body {
 
 .footer {
     clear: both;
+    padding: 10px 15px;
 }
 
 .attribution {
@@ -167,10 +168,10 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 320px) and (max-width: 1300px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
     .aside {
         float: none;
-        height: 450px;
+        height: 500px;
         position: relative;
         width: 100%;
         z-index: 0;
@@ -179,20 +180,23 @@ body {
         background-position: auto;
         background-size: cover;
     }
+    .header {
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding: 30px 40px 20px 40px;
+        width: 100vw;
+    }
     .menu {
         color: white;
     }
     .main-section {
-        top: 0;
-        left: 0;
-        position: absolute;
         float: none;
         width: 100%;
-        height: 100%;
-        padding: 30px 25px 20px 25px;
+        padding: 30px 40px 20px 40px;
     }
     .text {
-        margin-top: 380px;
+        margin-top: 0;
     }
     .text .title {
         font-size: 26px;
@@ -235,9 +239,5 @@ body {
     }
     .privacy {
         margin-top: 20px;
-    }
-
-    .footer {
-        padding: 10px 15px;
     }
 }
